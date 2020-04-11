@@ -12,16 +12,18 @@
 				<td><input type="text" id="name" name=""></td>
 			</tr>
 			<tr>
-				<td><input type="button" id="sent" name=""></td>
+				<td><input type="button" id="sent" onclick="show()" name=""></td>
 			</tr>
 		</table>
 		<p>Hello <span id="namefield"></span></p>
 	</center>
 	<script type="text/javascript">
-		var name = getElementsById('name').value();
-		if(getElementsById('sent')){
-			getElementsById('namefield').value(name);
+		
+		function show(){
+			var name = document.getElementById('name').value;
+			document.getElementById('namefield').innerHTML = name;
 		}
+		
 	</script>
 </body>
 </html>
