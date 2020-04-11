@@ -5,7 +5,23 @@
 </head>
 <body>
 	<center>
-		<h2>Hello</h2>
+		<h2>Hello</h2><br>
+		<table>
+			<tr>
+				<td>Name : </td>
+				<td><input type="text" id="name" name=""></td>
+			</tr>
+			<tr>
+				<td><input type="button" id="sent" name=""></td>
+			</tr>
+		</table>
+		<p>Hello <span id="namefield"></span></p>
 	</center>
+	<script type="text/javascript">
+		var name = getElementsById('name').value();
+		if(getElementsById('sent')){
+			getElementsById('namefield').value(name);
+		}
+	</script>
 </body>
 </html>
