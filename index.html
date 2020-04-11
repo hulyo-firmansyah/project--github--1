@@ -7,6 +7,29 @@
 	<center>
 		<h2>Hello</h2><br>
 		Check my instagram account : <a href="https://instagram.com/alex_nosyura>alex_nosyura</a>
+		<table>
+			<tr>
+				<td>Name : </td>
+				<td><input type="text" id="name" name=""></td>
+			</tr>
+			<tr>
+				<td><input type="button" id="sent" onclick="show()" name="" value="Submit"></td>
+			</tr>
+		</table>
+    <p>Hello <span id="namefield"></span></p>
 	</center>
+	<script type="text/javascript">
+		const enter = document.getElementById("name");
+		enter.addEventListener("keydown", function(event){
+			if (event.key === "Enter"){
+				show();
+			}
+		});
+		function show(){
+			var name = document.getElementById('name').value;
+			document.getElementById('namefield').innerHTML = name;
+		}
+
+	</script>
 </body>
 </html>
